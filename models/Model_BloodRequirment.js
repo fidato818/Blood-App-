@@ -3,44 +3,44 @@ const Schema = mongoose.Schema
 const bloodRequirment = new Schema({
     bloodGroup: {
         type: String,
-        required: true
+        // required: true
     },
     pintRequired: {
         type: String,
-        required: true
+        // required: true
     },
     urgency: {
         type: String,
-        required: true
+        // required: true
     },
     country: {
         type: String,
-        required: true
+        // required: true
     },
     state: {
         type: String,
-        required: true
+        // required: true
     },
     city: {
         type: String,
-        required: true
+        // required: true
     },
     hospital: {
         type: String,
-        required: true
+        // required: true
     }
     ,
     relateWithPatient: {
         type: String,
-        required: true
+        // required: true
     },
     contactUs: {
         type: String,
-        required: true
+        // required: true
     },
     additionInstruction: {
         type: String,
-        required: true
+        // required: true
     }
 });
 
