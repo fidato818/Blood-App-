@@ -1,6 +1,9 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema
 const bloodRequirment = new Schema({
+    fullName: {
+        type: String
+    },
     bloodGroup: {
         type: String,
         // required: true
