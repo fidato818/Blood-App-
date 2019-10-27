@@ -35,6 +35,7 @@ router.get('/getData', (req, res) => {
 router.post("/addData", async (req, res) => {
     try {
         const user = req.body
+        const hash = hashPassword(user.password);
         const newUser = new User(user)
         console.log('newUser', newUser)
         await newUser.save()
@@ -48,14 +49,6 @@ router.post("/addData", async (req, res) => {
     } catch (error) {
         console.log('Error:', error)
     }
-    // .then(result => {
-    //     res.send(result)
-    //     console.log(result)
-    // })
-    // .catch(err => {
-    //     res.send({ message: err })
-    // })
-
 })
 
 // router.post('/add', (req, res) => {
